@@ -12,7 +12,7 @@ const SkillsSection = () => {
               className="flex flex-row items-center justify-between gap-6 "
             >
               <img
-                src={`../../assets/${skill.icon}.svg`}
+                src={skill.icon}
                 alt={skill.name}
                 className="  h-10  w-10 lg:w-16 lg:h-16"
               />
