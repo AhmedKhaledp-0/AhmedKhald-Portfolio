@@ -1,5 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { icons } from "../../utils/icons";
+import myPhoto from "../../assets/fullImg.png";
+
 const Hero = () => {
   return (
     <section
@@ -31,12 +33,11 @@ const Hero = () => {
               Download CV
             </a>
           </div>
-
           {/* Right Section */}
           <div className="flex-1 max-w-md justify-center items-center relative">
             {/* Profile Photo */}
             <img
-              src="/src/assets/fullImg.png"
+              src={myPhoto}
               alt="Ahmed Khaled photo"
               className="  w-full object-cover clip-photo"
             />

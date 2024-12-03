@@ -10,21 +10,25 @@ export const links = [
     href: "https://x.com/AhmedKhaledp_0",
     icon: faXTwitter,
     hoverColor: "hover:text-black",
+    platform: "X",
   },
   {
     href: "https://github.com/AhmedKhaledp-0",
     icon: faGithub,
     hoverColor: "hover:text-black",
+    platform: "Github",
   },
   {
     href: "https://www.facebook.com/AhmedKhaldP.0",
     icon: faFacebook,
     hoverColor: "hover:text-blue-700",
+    platform: "Facebook",
   },
   {
     href: "https://www.linkedin.com/in/ahmed-khaled-8a6450276/",
     icon: faLinkedin,
     hoverColor: "hover:text-blue-500",
+    platfort: "Linkedin",
   },
 ];
 
@@ -43,7 +47,7 @@ export const projects = [
   {
     title: "NEO_SHERXE",
     description: "A 3D interactive space exploration application.",
-    image: "/src/assets/projects/orrerryProject.webp",
+    image: "../assets/projects/orrerryProject.webp",
     github: "https://github.com/AhmedKhaledp-0/NEO_SHERXE",
     demo: "https://neo-sherxe.vercel.app/",
     skills: ["HTML", "CSS", "React", "Three.js", "R3F"],
@@ -51,7 +55,7 @@ export const projects = [
   {
     title: "Little Lemon",
     description: "A website showing menu and reservation features.",
-    image: "/src/assets/projects/littleLemonProject.webp",
+    image: "../assets/projects/littleLemonProject.webp",
     github: "https://github.com/AhmedKhaledp-0/little-lemon",
     demo: "https://little-lemon-inky-six.vercel.app/",
     skills: ["HTML", "CSS", "JavaScript", "React"],
@@ -59,7 +63,7 @@ export const projects = [
   {
     title: "Coffee",
     description: "A sleek, static website for a coffee brand.",
-    image: "/src/assets/projects/coffeeProject.webp",
+    image: "../assets/projects/coffeeProject.webp",
     github: "https://github.com/AhmedKhaledp-0/coffee",
     demo: "https://ahmedkhaledp-0.github.io/coffee/",
     skills: ["HTML", "CSS"],
@@ -67,7 +71,7 @@ export const projects = [
   {
     title: "WizardZ",
     description: "A magical-themed interactive landing page.",
-    image: "/src/assets/projects/wizardZProject.webp",
+    image: "../assets/projects/wizardZProject.webp",
     github: "https://github.com/AhmedKhaledp-0/wizardZ",
     demo: "https://ahmedkhaledp-0.github.io/wizardZ/",
     skills: ["HTML", "CSS"],
