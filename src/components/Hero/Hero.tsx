@@ -25,7 +25,7 @@ const Hero = () => {
               optimized applications.
             </p>
             <a
-              href="/public/cv.pdf"
+              href="https://ahmed-khaled-portfolio-orcin.vercel.app/cv.pdf"
               download="Ahmed_Khaled_CV.pdf"
               className="bg-primary w-full md:w-60 justify-center text-secondary px-8 py-4 font-bold rounded-lg flex items-center gap-2 hover:bg-secondary hover:text-primary transition-colors"
             >
