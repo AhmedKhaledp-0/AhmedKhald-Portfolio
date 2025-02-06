@@ -93,4 +93,12 @@ export const projects = [
     demo: "https://ahmedkhaledp-0.github.io/wizardZ/",
     skills: ["HTML", "CSS"],
   },
+  {
+    title:"Manuvers Calculator",
+    description:"An interactive web application for calculating and visualizing orbital transfer maneuvers",
+    image:ManuversCalculator,
+    github:"https://github.com/AhmedKhaledp-0/Manuvers-Assiment",
+    demo:"https://manuvers-assiment.vercel.app/",
+    skills:["React","Tailwind CSS"]
+}
 ];
