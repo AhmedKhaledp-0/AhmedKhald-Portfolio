@@ -9,6 +9,10 @@ import orrerryProject from "../assets/projects/orrerryProject.webp";
 import littleLemonProject from "../assets/projects/littleLemonProject.webp";
 import coffeeProject from "../assets/projects/coffeeProject.webp";
 import wizardZProject from "../assets/projects/wizardZProject.webp";
+import ManouversTask from "../assets/projects/ManouversTask.webp";
+import tasksProgress from "../assets/projects/tasksProgress.webp";
+import DEPIProjectManager from "../assets/projects/DEPIProjectManager.webp";
+import tasksCountDown from "../assets/projects/tasksCountDown.webp";
 // skills icons photos
 import html from "../assets/html.svg";
 import pr from "../assets/pr.svg";
@@ -43,7 +47,7 @@ export const links = [
     href: "https://www.linkedin.com/in/ahmed-khaled-8a6450276/",
     icon: faLinkedin,
     hoverColor: "hover:text-blue-500",
-    platfort: "Linkedin",
+    platform: "Linkedin",
   },
 ];
 
@@ -94,11 +98,35 @@ export const projects = [
     skills: ["HTML", "CSS"],
   },
   {
-    title:"Manuvers Calculator",
-    description:"An interactive web application for calculating and visualizing orbital transfer maneuvers",
-    image:ManuversCalculator,
-    github:"https://github.com/AhmedKhaledp-0/Manuvers-Assiment",
-    demo:"https://manuvers-assiment.vercel.app/",
-    skills:["React","Tailwind CSS"]
-}
+    title: "Manouvers Task",
+    description: "A task management application for maneuvers.",
+    image: ManouversTask,
+    github: "https://github.com/AhmedKhaledp-0/Manuvers-Assiment",
+    demo: "https://manuvers-assiment.vercel.app/",
+    skills: ["React", "TypeScript", "Tailwind CSS", "ChartJS"],
+  },
+  {
+    title: "Tasks Progress",
+    description: "Track and visualize task progress efficiently.",
+    image: tasksProgress,
+    github: "NA",
+    demo: "https://timeline-rose.vercel.app/",
+    skills: ["React", "TypeScript", "Tailwind CSS", "CSS"],
+  },
+  {
+    title: "DEPI Project Manager",
+    description: "Project management tool for DEPI initiatives.",
+    image: DEPIProjectManager,
+    github: "NA",
+    demo: "https://task-depi-project.vercel.app/",
+    skills: ["React", "TypeScript", "Tailwind CSS", "supabase"],
+  },
+  {
+    title: "Tasks CountDown",
+    description: "Countdown timer for task management.",
+    image: tasksCountDown,
+    github: "NA",
+    demo: "https://countdown-app-rose.vercel.app/",
+    skills: ["React", "TypeScript", "Tailwind CSS"],
+  },
 ];
