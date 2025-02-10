@@ -32,15 +32,28 @@ const Projects = () => {
                   ))}
                 </ul>
                 <div className="flex justify-self-end self-end gap-4">
-                  <a
-                    href={project.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2 text-gray-600 hover:text-black transition-colors"
-                  >
-                    <FontAwesomeIcon icon={icons.github} className="h-5 w-5" />
-                    Code
-                  </a>
+                  {project.github === "NA" ? (
+                    <span className="text-gray-500 italic flex items-center gap-2">
+                      <FontAwesomeIcon
+                        icon={icons.github}
+                        className="h-5 w-5"
+                      />
+                      Not Open Source
+                    </span>
+                  ) : (
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 text-gray-600 hover:text-black transition-colors"
+                    >
+                      <FontAwesomeIcon
+                        icon={icons.github}
+                        className="h-5 w-5"
+                      />
+                      Code
+                    </a>
+                  )}
                   <a
                     href={project.demo}
                     target="_blank"
