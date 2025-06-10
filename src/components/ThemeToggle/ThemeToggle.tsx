@@ -28,7 +28,7 @@ const ThemeToggle = () => {
         />
         <FontAwesomeIcon
           icon={faMoon}
-          className={`absolute inset-0 h-5 w-5 text-slate-700 transition-all duration-300 ${
+          className={`absolute inset-0 h-5 w-5 text-slate-300 transition-all duration-300 ${
             isDarkMode
               ? "opacity-100 rotate-0 scale-100"
               : "opacity-0 -rotate-90 scale-75"

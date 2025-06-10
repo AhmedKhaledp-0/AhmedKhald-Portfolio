@@ -9,10 +9,9 @@ const Footer = () => {
     <footer className="relative bg-gradient-to-br from-zinc-50 via-white to-zinc-100 dark:from-zinc-900 dark:via-zinc-800 dark:to-zinc-900 border-t border-zinc-200/50 dark:border-zinc-700/50">
       {/* Background decoration */}
       <div className="absolute inset-0 bg-gradient-to-t from-zinc-100/20 to-transparent dark:from-zinc-800/20"></div>
-      
+
       <div className="container mx-auto px-4 py-12 relative z-10">
         <div className="flex flex-col items-center space-y-8">
-          
           {/* Logo/Name */}
           <div className="text-center">
             <button
@@ -49,13 +48,13 @@ const Footer = () => {
           {/* Copyright */}
           <div className="text-center pt-6 border-t border-zinc-200/50 dark:border-zinc-700/50 w-full max-w-md">
             <p className="text-sm text-zinc-600 dark:text-zinc-400">
-              &copy; {new Date().getFullYear()} Ahmed Khaled. All rights reserved.
+              &copy; {new Date().getFullYear()} Ahmed Khaled. All rights
+              reserved.
             </p>
             <p className="text-xs text-zinc-500 dark:text-zinc-500 mt-1">
               Made with ❤️ using React & TypeScript
             </p>
           </div>
-
         </div>
       </div>
 
