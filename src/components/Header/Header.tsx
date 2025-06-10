@@ -2,17 +2,19 @@ import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import Logo from "../../assets/logos/darklogo.svg";
+import ThemeToggle from "../ThemeToggle/ThemeToggle";
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="fixed w-full bg-white/90 backdrop-blur-sm z-50 shadow-sm">
+    <header className="fixed w-full  z-50 shadow-sm">
       <nav className="container mx-auto px-4 py-4">
         <div className="flex justify-between items-center">
           <a href="#home" className="flex items-center space-x-2">
             <img src={Logo} alt="Logo" className="h-6 w-auto lg:h-6" />
             <span className="sr-only">Portfolio</span>
           </a>
+          <ThemeToggle />
 
           {/* Mobile menu button */}
           <button

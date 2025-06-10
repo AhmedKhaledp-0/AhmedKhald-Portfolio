@@ -2,7 +2,7 @@ import { skills } from "../../utils/constants";
 
 const SkillsSection = () => {
   return (
-    <section id="skills" className="py-16 bg-gray-50">
+    <section id="skills" className="py-16">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold text-center mb-12">My Skills</h2>
         <div className="grid md:grid-cols-2 sm:grid-cols-1 gap-x-8 gap-y-12">

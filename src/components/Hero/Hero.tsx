@@ -4,10 +4,7 @@ import myPhoto from "../../assets/fullImg.png";
 
 const Hero = () => {
   return (
-    <section
-      id="home"
-      className="pt-24 md:pt-32 pb-16 bg-gradient-to-br from-blue-50 to-white"
-    >
+    <section id="home" className="pt-24 md:pt-32 pb-16 ">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center justify-between gap-8">
           {/* Left Section */}
