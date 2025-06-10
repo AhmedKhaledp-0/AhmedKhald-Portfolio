@@ -3,7 +3,8 @@ const Services = () => {
     {
       id: 1,
       title: "Web Design & UI/UX",
-      description: "Creating beautiful, user-centered designs that provide exceptional user experiences and modern interfaces.",
+      description:
+        "Creating beautiful, user-centered designs that provide exceptional user experiences and modern interfaces.",
       icon: (
         <svg
           width="24"
@@ -23,7 +24,8 @@ const Services = () => {
     {
       id: 2,
       title: "Frontend Development",
-      description: "Building responsive, fast, and interactive web applications using modern technologies like React and TypeScript.",
+      description:
+        "Building responsive, fast, and interactive web applications using modern technologies like React and TypeScript.",
       icon: (
         <svg
           width="24"
@@ -43,7 +45,8 @@ const Services = () => {
     {
       id: 3,
       title: "Technical Documentation",
-      description: "Writing clear, comprehensive documentation and guides that help teams understand and maintain code effectively.",
+      description:
+        "Writing clear, comprehensive documentation and guides that help teams understand and maintain code effectively.",
       icon: (
         <svg
           width="24"
@@ -83,13 +86,12 @@ const Services = () => {
             <span className="bg-gradient-to-r from-zinc-900 via-zinc-700 to-zinc-800 dark:from-zinc-100 dark:via-zinc-300 dark:to-zinc-200 bg-clip-text text-transparent">
               My
             </span>{" "}
-            <span className="text-zinc-700 dark:text-zinc-300">
-              Services
-            </span>
+            <span className="text-zinc-700 dark:text-zinc-300">Services</span>
           </h2>
 
           <p className="text-lg text-zinc-600 dark:text-zinc-400 max-w-2xl mx-auto leading-relaxed">
-            I provide comprehensive web development services to bring your digital vision to life
+            I provide comprehensive web development services to bring your
+            digital vision to life
           </p>
         </div>
 
@@ -106,7 +108,9 @@ const Services = () => {
 
               <div className="relative">
                 {/* Icon */}
-                <div className={`w-16 h-16 mb-6 rounded-2xl bg-gradient-to-br ${service.gradient} p-4 shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-110`}>
+                <div
+                  className={`w-16 h-16 mb-6 rounded-2xl bg-gradient-to-br ${service.gradient} p-4 shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-110`}
+                >
                   <div className="w-full h-full flex items-center justify-center text-white">
                     {service.icon}
                   </div>
@@ -126,7 +130,9 @@ const Services = () => {
               </div>
 
               {/* Animated border */}
-              <div className={`absolute inset-0 rounded-3xl border-2 border-transparent bg-gradient-to-r ${service.gradient} opacity-0 group-hover:opacity-20 transition-opacity duration-500`}></div>
+              <div
+                className={`absolute inset-0 rounded-3xl border-2 border-transparent bg-gradient-to-r ${service.gradient} opacity-0 group-hover:opacity-20 transition-opacity duration-500`}
+              ></div>
             </div>
           ))}
         </div>
@@ -135,9 +141,7 @@ const Services = () => {
         <div className="text-center mt-16">
           <div className="inline-flex items-center gap-2 text-zinc-500 dark:text-zinc-400">
             <div className="w-8 h-px bg-gradient-to-r from-transparent to-zinc-300 dark:to-zinc-600"></div>
-            <span className="text-sm font-medium">
-              Ready to collaborate
-            </span>
+            <span className="text-sm font-medium">Ready to collaborate</span>
             <div className="w-8 h-px bg-gradient-to-l from-transparent to-zinc-300 dark:to-zinc-600"></div>
           </div>
         </div>
