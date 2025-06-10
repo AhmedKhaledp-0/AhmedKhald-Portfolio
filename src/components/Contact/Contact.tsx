@@ -109,7 +109,7 @@ const Contact = () => {
               </h3>
 
               <div className="space-y-6">
-                <div className="group flex items-center gap-4 p-4 rounded-2xl hover:bg-zinc-50/50 dark:hover:bg-zinc-700/50 transition-all duration-300">
+                <div className="group flex flex-col md:flex-row items-start md:items-center gap-4 p-4 rounded-2xl hover:bg-zinc-50/50 dark:hover:bg-zinc-700/50 transition-all duration-300">
                   <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-violet-600 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                     <FontAwesomeIcon
                       icon={faEnvelope}
@@ -121,12 +121,12 @@ const Contact = () => {
                       Email
                     </p>
                     <p className="text-zinc-800 dark:text-zinc-200 font-semibold">
-                      ahmedkhaled8415230@gmail.com
+                      3kuriboh3@gmail.com
                     </p>
                   </div>
                 </div>
 
-                <div className="group flex items-center gap-4 p-4 rounded-2xl hover:bg-zinc-50/50 dark:hover:bg-zinc-700/50 transition-all duration-300">
+                <div className="group flex flex-col md:flex-row items-start md:items-center gap-4 p-4 rounded-2xl hover:bg-zinc-50/50 dark:hover:bg-zinc-700/50 transition-all duration-300">
                   <div className="w-12 h-12 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                     <FontAwesomeIcon
                       icon={faPhone}
@@ -143,7 +143,7 @@ const Contact = () => {
                   </div>
                 </div>
 
-                <div className="group flex items-center gap-4 p-4 rounded-2xl hover:bg-zinc-50/50 dark:hover:bg-zinc-700/50 transition-all duration-300">
+                <div className="group flex flex-col md:flex-row items-start md:items-center gap-4 p-4 rounded-2xl hover:bg-zinc-50/50 dark:hover:bg-zinc-700/50 transition-all duration-300">
                   <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-red-500 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                     <FontAwesomeIcon
                       icon={faMapMarkerAlt}
