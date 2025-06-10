@@ -1,20 +1,22 @@
-import { 
-  faDownload, 
-  faCode, 
-  faDatabase, 
+import {
+  faDownload,
+  faCode,
+  faDatabase,
   faLaptopCode,
   faEnvelope,
   faPhone,
   faLocationDot,
   faExternalLink,
   faBars,
-  faXmark
-} from '@fortawesome/free-solid-svg-icons';
+  faXmark,
+  faArrowRight,
+  faPaintBrush,
+} from "@fortawesome/free-solid-svg-icons";
 import {
   faGithub,
   faLinkedin,
-  faTwitter
-} from '@fortawesome/free-brands-svg-icons';
+  faTwitter,
+} from "@fortawesome/free-brands-svg-icons";
 
 export const icons = {
   download: faDownload,
@@ -29,5 +31,7 @@ export const icons = {
   location: faLocationDot,
   externalLink: faExternalLink,
   bars: faBars,
-  xmark: faXmark
+  xmark: faXmark,
+  arrow: faArrowRight,
+  design: faPaintBrush,
 };

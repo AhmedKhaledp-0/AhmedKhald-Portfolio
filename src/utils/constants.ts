@@ -13,15 +13,26 @@ import ManouversTask from "../assets/projects/ManouversTask.webp";
 import tasksProgress from "../assets/projects/tasksProgress.webp";
 import DEPIProjectManager from "../assets/projects/DEPIProjectManager.webp";
 import tasksCountDown from "../assets/projects/tasksCountDown.webp";
-// skills icons photos
-import html from "../assets/html.svg";
-import pr from "../assets/pr.svg";
-import css from "../assets/css.svg";
-import ai from "../assets/ai.svg";
-import js from "../assets/js.svg";
-import latex from "../assets/latex.svg";
-import react from "../assets/react.svg";
-import python from "../assets/python.svg";
+// skills icons using react-icons
+import {
+  SiJavascript,
+  SiTypescript,
+  SiPython,
+  SiHtml5,
+  SiCss3,
+  SiReact,
+  SiNextdotjs,
+  SiTailwindcss,
+  SiReactquery,
+  SiRedux,
+  SiGit,
+  SiGithub,
+  SiLinux,
+  SiFirebase,
+  SiVercel,
+  SiFigma,
+  SiLatex,
+} from "react-icons/si";
 
 //social links contact section content
 export const links = [
@@ -53,17 +64,29 @@ export const links = [
 
 //skills section content
 export const skills = [
-  { name: "HTML5", icon: html, percentage: 90 },
-  { name: "Premiere Pro", icon: pr, percentage: 60 },
-  { name: "CSS3", icon: css, percentage: 85 },
-  { name: "Illustrator", icon: ai, percentage: 55 },
-  { name: "JavaScript", icon: js, percentage: 75 },
-  { name: "LaTeX", icon: latex, percentage: 93 },
-  { name: "React", icon: react, percentage: 57 },
-  { name: "Python", icon: python, percentage: 77 },
+  {
+    skills: [
+      { name: "JavaScript", icon: SiJavascript },
+      { name: "TypeScript", icon: SiTypescript },
+      { name: "Python", icon: SiPython },
+      { name: "HTML5", icon: SiHtml5 },
+      { name: "CSS3", icon: SiCss3 },
+      { name: "React", icon: SiReact },
+      { name: "Next.js", icon: SiNextdotjs },
+      { name: "Tailwind CSS", icon: SiTailwindcss },
+      { name: "React Query", icon: SiReactquery },
+      { name: "Redux", icon: SiRedux },
+      { name: "Git", icon: SiGit },
+      { name: "GitHub", icon: SiGithub },
+      { name: "Linux", icon: SiLinux },
+      { name: "Firebase", icon: SiFirebase },
+      { name: "Vercel", icon: SiVercel },
+      { name: "Figma", icon: SiFigma },
+      { name: "LaTeX", icon: SiLatex },
+    ],
+  },
 ];
 
-//projects section content
 export const projects = [
   {
     title: "NEO_SHERXE",
