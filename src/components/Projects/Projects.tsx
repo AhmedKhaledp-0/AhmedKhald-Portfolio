@@ -5,11 +5,6 @@ import { projects } from "../../utils/constants";
 const Projects = () => {
   return (
     <section id="projects" className="relative py-20 lg:py-32 overflow-hidden">
-      {/* Background Elements */}
-      <div className="absolute inset-0 bg-gradient-to-br from-zinc-50 via-white to-zinc-100 dark:from-zinc-900 dark:via-zinc-800 dark:to-zinc-900"></div>
-      <div className="absolute top-20 right-10 w-72 h-72 bg-emerald-300 rounded-full mix-blend-multiply filter blur-xl opacity-10 animate-pulse"></div>
-      <div className="absolute bottom-20 left-10 w-72 h-72 bg-blue-300 rounded-full mix-blend-multiply filter blur-xl opacity-10 animate-pulse delay-1000"></div>
-
       <div className="container mx-auto px-4 relative z-10">
         {/* Section Header */}
         <div className="text-center mb-16">
@@ -24,13 +19,12 @@ const Projects = () => {
             <span className="bg-gradient-to-r from-zinc-900 via-zinc-700 to-zinc-800 dark:from-zinc-100 dark:via-zinc-300 dark:to-zinc-200 bg-clip-text text-transparent">
               My
             </span>{" "}
-            <span className="text-zinc-700 dark:text-zinc-300">
-              Projects
-            </span>
+            <span className="text-zinc-700 dark:text-zinc-300">Projects</span>
           </h2>
 
           <p className="text-lg text-zinc-600 dark:text-zinc-400 max-w-2xl mx-auto leading-relaxed">
-            Showcasing my latest work in web development and interactive experiences
+            Showcasing my latest work in web development and interactive
+            experiences
           </p>
         </div>
 
@@ -51,7 +45,7 @@ const Projects = () => {
                   onError={(e) => {
                     // Fallback for missing images
                     const target = e.target as HTMLImageElement;
-                    target.style.display = 'none';
+                    target.style.display = "none";
                     const parent = target.parentElement;
                     if (parent) {
                       parent.innerHTML = `
@@ -69,7 +63,7 @@ const Projects = () => {
                     }
                   }}
                 />
-                
+
                 {/* Overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>
@@ -79,7 +73,7 @@ const Projects = () => {
                 <h3 className="text-xl lg:text-2xl font-bold text-zinc-800 dark:text-zinc-200 mb-3 group-hover:text-zinc-900 dark:group-hover:text-white transition-colors duration-300">
                   {project.title}
                 </h3>
-                
+
                 <p className="text-zinc-600 dark:text-zinc-400 mb-4 leading-relaxed group-hover:text-zinc-700 dark:group-hover:text-zinc-300 transition-colors duration-300 flex-grow">
                   {project.description}
                 </p>
@@ -120,7 +114,7 @@ const Projects = () => {
                       Code
                     </a>
                   )}
-                  
+
                   <a
                     href={project.demo}
                     target="_blank"

@@ -8,12 +8,6 @@ const Hero = () => {
       id="home"
       className="relative min-h-screen flex items-center overflow-hidden pt-16 lg:pt-0"
     >
-      {/* Background Elements */}
-      <div className="absolute inset-0 bg-gradient-to-br from-zinc-50 via-white to-zinc-100 dark:from-zinc-900 dark:via-zinc-800 dark:to-zinc-900"></div>
-      <div className="absolute top-20 left-10 w-72 h-72 bg-zinc-300 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse"></div>
-      <div className="absolute top-40 right-10 w-72 h-72 bg-zinc-400 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse delay-1000"></div>
-      <div className="absolute bottom-20 left-20 w-72 h-72 bg-zinc-300 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse delay-2000"></div>
-
       <div className="container mx-auto px-4 relative z-10">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-8">
           {/* Left Section */}
