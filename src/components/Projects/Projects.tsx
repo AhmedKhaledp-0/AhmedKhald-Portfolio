@@ -11,7 +11,7 @@ const Projects = () => {
       <div className="container mx-auto px-4 relative z-10">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <div className="inline-flex items-center gap-2 bg-white/80 dark:bg-zinc-800/80 backdrop-blur-sm rounded-full px-4 py-2 mb-6 shadow-lg">
+          <div className="inline-flex items-center gap-2 bg-white/80 dark:bg-zinc-800/80  rounded-full px-4 py-2 mb-6 shadow-lg">
             <div className="w-2 h-2 bg-emerald-500 rounded-full animate-pulse"></div>
             <span className="text-sm font-medium text-zinc-600 dark:text-zinc-300">
               Featured Work
@@ -36,7 +36,7 @@ const Projects = () => {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="group bg-white/60 dark:bg-zinc-800/60 backdrop-blur-sm rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-zinc-200/50 dark:border-zinc-700/50 flex flex-col h-full"
+              className="group bg-white/60 dark:bg-zinc-800/60  rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-zinc-200/50 dark:border-zinc-700/50 flex flex-col h-full"
             >
               {/* Image Container */}
               <div className="h-48 lg:h-56 overflow-hidden bg-gradient-to-br from-zinc-100 to-zinc-200 dark:from-zinc-700 dark:to-zinc-800 flex-shrink-0">

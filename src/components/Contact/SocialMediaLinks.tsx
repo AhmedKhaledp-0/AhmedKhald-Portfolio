@@ -10,7 +10,7 @@ export const SocialMediaLinks = () => {
           href={href}
           target="_blank"
           rel="noopener noreferrer"
-          className="group relative w-12 h-12 bg-white/80 dark:bg-zinc-700/80 backdrop-blur-sm rounded-2xl shadow-lg hover:shadow-xl border border-zinc-200/50 dark:border-zinc-600/50 transition-all duration-300 hover:-translate-y-2 hover:scale-110 flex items-center justify-center"
+          className="group relative w-12 h-12 bg-white/80 dark:bg-zinc-700/80  rounded-2xl shadow-lg hover:shadow-xl border border-zinc-200/50 dark:border-zinc-600/50 transition-all duration-300 hover:-translate-y-2 hover:scale-110 flex items-center justify-center"
           aria-label={platform}
         >
           <FontAwesomeIcon

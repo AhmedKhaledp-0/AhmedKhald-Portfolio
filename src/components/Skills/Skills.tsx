@@ -9,7 +9,7 @@ const Skills = () => {
       <div className="container mx-auto px-4 relative z-10">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <div className="inline-flex items-center gap-2 bg-white/80 dark:bg-zinc-800/80 backdrop-blur-sm rounded-full px-4 py-2 mb-6 shadow-lg">
+          <div className="inline-flex items-center gap-2 bg-white/80 dark:bg-zinc-800/80  rounded-full px-4 py-2 mb-6 shadow-lg">
             <div className="w-2 h-2 bg-blue-500 rounded-full animate-pulse"></div>
             <span className="text-sm font-medium text-zinc-600 dark:text-zinc-300">
               Technical Expertise
@@ -39,7 +39,7 @@ const Skills = () => {
                 {category.skills.map((skill, skillIndex) => (
                   <div
                     key={skillIndex}
-                    className="group relative bg-white/60 dark:bg-zinc-800/60 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-zinc-200/50 dark:border-zinc-700/50"
+                    className="group relative bg-white/60 dark:bg-zinc-800/60  rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-zinc-200/50 dark:border-zinc-700/50"
                   >
                     {/* Hover gradient overlay */}
                     <div className="absolute inset-0 bg-gradient-to-br from-transparent via-transparent to-zinc-100/20 dark:to-zinc-700/20 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>

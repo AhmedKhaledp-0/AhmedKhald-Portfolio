@@ -13,7 +13,7 @@ const Hero = () => {
           {/* Left Section */}
           <div className="flex-1 text-center lg:text-left max-w-2xl">
             {/* Greeting */}
-            <div className="inline-flex items-center gap-2 bg-white/80 dark:bg-zinc-800/80 backdrop-blur-sm rounded-full px-4 py-2 mb-6 shadow-lg">
+            <div className="inline-flex items-center gap-2 bg-white/80 dark:bg-zinc-800/80  rounded-full px-4 py-2 mb-6 shadow-lg">
               <div className="w-2 h-2 bg-emerald-500 rounded-full animate-pulse"></div>
               <span className="text-sm font-medium text-zinc-600 dark:text-zinc-300">
                 Available for work
@@ -61,7 +61,7 @@ const Hero = () => {
 
               <a
                 href="#contact"
-                className="group border-2 border-zinc-900 dark:border-zinc-100 text-zinc-900 dark:text-zinc-100 hover:bg-zinc-900 hover:text-white dark:hover:bg-zinc-100 dark:hover:text-zinc-900 px-8 py-4 rounded-full font-semibold transition-all duration-300 flex items-center gap-3 min-w-[200px] justify-center backdrop-blur-sm"
+                className="group border-2 border-zinc-900 dark:border-zinc-100 text-zinc-900 dark:text-zinc-100 hover:bg-zinc-900 hover:text-white dark:hover:bg-zinc-100 dark:hover:text-zinc-900 px-8 py-4 rounded-full font-semibold transition-all duration-300 flex items-center gap-3 min-w-[200px] justify-center "
               >
                 <span>Let's Connect</span>
                 <FontAwesomeIcon

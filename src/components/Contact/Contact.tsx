@@ -72,7 +72,7 @@ const Contact = () => {
       <div className="container mx-auto px-4 relative z-10">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <div className="inline-flex items-center gap-2 bg-white/80 dark:bg-zinc-800/80 backdrop-blur-sm rounded-full px-4 py-2 mb-6 shadow-lg">
+          <div className="inline-flex items-center gap-2 bg-white/80 dark:bg-zinc-800/80  rounded-full px-4 py-2 mb-6 shadow-lg">
             <div className="w-2 h-2 bg-emerald-500 rounded-full animate-pulse"></div>
             <span className="text-sm font-medium text-zinc-600 dark:text-zinc-300">
               Let's Connect
@@ -95,7 +95,7 @@ const Contact = () => {
         <div className="grid lg:grid-cols-2 gap-12 max-w-7xl mx-auto">
           {/* Contact Information */}
           <div className="space-y-8">
-            <div className="bg-white/60 dark:bg-zinc-800/60 backdrop-blur-sm rounded-3xl p-8 shadow-lg border border-zinc-200/50 dark:border-zinc-700/50">
+            <div className="bg-white/60 dark:bg-zinc-800/60  rounded-3xl p-8 shadow-lg border border-zinc-200/50 dark:border-zinc-700/50">
               <h3 className="text-2xl font-bold text-zinc-800 dark:text-zinc-200 mb-6 flex items-center gap-3">
                 <div className="w-10 h-10 bg-gradient-to-br from-emerald-500 to-blue-600 rounded-2xl flex items-center justify-center">
                   <FontAwesomeIcon
@@ -161,7 +161,7 @@ const Contact = () => {
             </div>
 
             {/* Social Media Links */}
-            <div className="bg-white/60 dark:bg-zinc-800/60 backdrop-blur-sm rounded-3xl p-8 shadow-lg border border-zinc-200/50 dark:border-zinc-700/50">
+            <div className="bg-white/60 dark:bg-zinc-800/60  rounded-3xl p-8 shadow-lg border border-zinc-200/50 dark:border-zinc-700/50">
               <h4 className="text-xl font-bold text-zinc-800 dark:text-zinc-200 mb-6 text-center">
                 Connect on Social Media
               </h4>
@@ -169,12 +169,12 @@ const Contact = () => {
             </div>
           </div>
 
-          <div className="bg-white/60 dark:bg-zinc-800/60 backdrop-blur-sm rounded-3xl p-8 shadow-lg border border-zinc-200/50 dark:border-zinc-700/50 grid md:grid-cols-2 lg:grid-cols-2 gap-6 animate-fadeIn">
+          <div className="bg-white/60 dark:bg-zinc-800/60  rounded-3xl p-8 shadow-lg border border-zinc-200/50 dark:border-zinc-700/50 grid md:grid-cols-2 lg:grid-cols-2 gap-6 animate-fadeIn">
             {instantMethods.map((method, index) => (
               <div
                 key={index}
                 onClick={method.action}
-                className={`group relative bg-white/70 dark:bg-zinc-800/70 backdrop-blur-sm rounded-3xl p-8 shadow-md border border-zinc-200/50 dark:border-zinc-700/50 cursor-pointer transition-all duration-300 hover:shadow-lg hover:scale-105 hover:-translate-y-1 ${method.hoverColor}`}
+                className={`group relative bg-white/70 dark:bg-zinc-800/70  rounded-3xl p-8 shadow-md border border-zinc-200/50 dark:border-zinc-700/50 cursor-pointer transition-all duration-300 hover:shadow-lg hover:scale-105 hover:-translate-y-1 ${method.hoverColor}`}
               >
                 <div className="text-center">
                   <div
