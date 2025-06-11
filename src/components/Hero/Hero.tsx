@@ -50,6 +50,7 @@ const Hero = () => {
               <a
                 href="https://ahmed-khaled-portfolio-orcin.vercel.app/AhmedKhaledCV.pdf"
                 download="Ahmed_Khaled_CV.pdf"
+                target="_blank"
                 content="application/pdf"
                 className="group bg-gradient-to-r from-zinc-900 to-zinc-700 hover:from-zinc-800 hover:to-zinc-600 dark:from-zinc-100 dark:to-zinc-300 dark:hover:from-zinc-200 dark:hover:to-zinc-400 text-white dark:text-zinc-900 px-8 py-4 rounded-full font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 flex items-center gap-3 min-w-[200px] justify-center"
               >
