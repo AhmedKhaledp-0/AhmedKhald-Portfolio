@@ -86,7 +86,7 @@ const Hero = () => {
 
             {/* Profile Photo Container */}
             <div className="relative bg-gradient-to-br from-zinc-800 to-zinc-600 dark:from-zinc-300 dark:to-zinc-500 rounded-3xl p-1 shadow-2xl transform hover:scale-105 transition-transform duration-500">
-              <div className="bg-white dark:bg-zinc-800 rounded-3xl p-2">
+              <div className="bg-white dark:bg-zinc-800 rounded-3xl">
                 <img
                   src={myPhoto}
                   alt="Ahmed Khaled photo"
@@ -112,7 +112,7 @@ const Hero = () => {
         </div>
 
         {/* Scroll indicator */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+        <div className="relative mt-16 flex justify-center animate-bounce">
           <div className="w-6 h-10 border-2 border-zinc-400 dark:border-zinc-600 rounded-full flex justify-center">
             <div className="w-1 h-3 bg-zinc-400 dark:bg-zinc-600 rounded-full mt-2 animate-pulse"></div>
           </div>
