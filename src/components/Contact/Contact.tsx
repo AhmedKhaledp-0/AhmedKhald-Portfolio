@@ -55,10 +55,7 @@ const Contact = () => {
       color: "from-indigo-500 to-indigo-600",
       hoverColor: "hover:from-indigo-600 hover:to-indigo-700",
       action: () =>
-        window.open(
-          " https://discordapp.com/channels/@me/978394183670841424/",
-          "_blank"
-        ),
+        window.open("https://discord.com/users/978394183670841424", "_blank"),
       description: "Connect on Discord",
       available: true,
     },
