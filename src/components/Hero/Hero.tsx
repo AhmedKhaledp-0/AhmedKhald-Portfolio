@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { icons } from "../../utils/icons";
-import myPhoto from "../../assets/fullImg.png";
+import myPhoto from "../../assets/ahmed.webp";
 
 const Hero = () => {
   return (
