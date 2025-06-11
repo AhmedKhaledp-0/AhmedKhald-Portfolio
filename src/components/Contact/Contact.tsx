@@ -65,7 +65,10 @@ const Contact = () => {
   ];
 
   return (
-    <section id="contact" className="relative py-20 lg:py-32 overflow-hidden">
+    <section
+      id="contact"
+      className="relative py-20 lg:py-32 overflow-hidden bg-gradient-to-br from-white via-zinc-50 to-zinc-100 dark:from-zinc-900 dark:via-zinc-800 dark:to-zinc-900"
+    >
       <div className="container mx-auto px-4 relative z-10">
         {/* Section Header */}
         <div className="text-center mb-16">
