@@ -1,10 +1,20 @@
+import { lazy, Suspense } from "react";
 import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
-import Skills from "./components/Skills/Skills";
-import Projects from "./components/Projects/Projects";
-import Contact from "./components/Contact/Contact";
-import Footer from "./components/Footer/Footer";
-import Services from "./components/Services/Services";
+
+// Lazy load heavy components
+const Skills = lazy(() => import("./components/Skills/Skills"));
+const Projects = lazy(() => import("./components/Projects/Projects"));
+const Contact = lazy(() => import("./components/Contact/Contact"));
+const Footer = lazy(() => import("./components/Footer/Footer"));
+const Services = lazy(() => import("./components/Services/Services"));
+
+// Loading component
+const LoadingSpinner = () => (
+  <div className="flex justify-center items-center py-20">
+    <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-zinc-900 dark:border-zinc-100"></div>
+  </div>
+);
 
 function App() {
   return (
@@ -12,12 +22,22 @@ function App() {
       <Header />
       <main>
         <Hero />
-        <Skills />
-        <Services />
-        <Projects />
-        <Contact />
+        <Suspense fallback={<LoadingSpinner />}>
+          <Skills />
+        </Suspense>
+        <Suspense fallback={<LoadingSpinner />}>
+          <Services />
+        </Suspense>
+        <Suspense fallback={<LoadingSpinner />}>
+          <Projects />
+        </Suspense>
+        <Suspense fallback={<LoadingSpinner />}>
+          <Contact />
+        </Suspense>
       </main>
-      <Footer />
+      <Suspense fallback={<LoadingSpinner />}>
+        <Footer />
+      </Suspense>
     </div>
   );
 }
