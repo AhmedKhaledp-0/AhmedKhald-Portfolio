@@ -95,11 +95,10 @@ const Services = () => {
 
         {/* Services Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
-          {services.map((service, index) => (
+          {services.map((service) => (
             <div
               key={service.id}
               className="group relative bg-white/60 dark:bg-zinc-800/60 backdrop-blur-sm rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-zinc-200/50 dark:border-zinc-700/50"
-              style={{ animationDelay: `${index * 150}ms` }}
             >
               {/* Hover gradient overlay */}
               <div className="absolute inset-0 bg-gradient-to-br from-transparent via-transparent to-zinc-100/20 dark:to-zinc-700/20 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
