@@ -11,16 +11,16 @@ const Services = lazy(() => import("./components/Services/Services"));
 
 // Loading component
 const LoadingSpinner = () => (
-  <div className="flex justify-center items-center py-8 md:py-20">
-    <div className="animate-spin rounded-full h-8 w-8 md:h-12 md:w-12 border-b-2 border-zinc-900 dark:border-zinc-100"></div>
+  <div className="flex justify-center items-center py-20">
+    <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-zinc-900 dark:border-zinc-100"></div>
   </div>
 );
 
 function App() {
   return (
-    <div className="min-h-screen bg-white dark:bg-zinc-900 text-zinc-900 dark:text-zinc-100 transition-colors duration-300">
+    <div className="min-h-screen bg-white dark:bg-zinc-900 text-zinc-900 dark:text-zinc-100 transition-colors">
       <Header />
-      <main className="relative">
+      <main>
         <Hero />
         <Suspense fallback={<LoadingSpinner />}>
           <Skills />
