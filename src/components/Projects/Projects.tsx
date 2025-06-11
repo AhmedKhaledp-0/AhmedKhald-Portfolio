@@ -54,6 +54,19 @@ const Projects = () => {
                     {project.title}
                   </h3>
 
+                  {/* Role Badge */}
+                  {project.role && (
+                    <div className="mb-3">
+                      <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 border border-blue-200 dark:border-blue-800">
+                        <FontAwesomeIcon
+                          icon={icons.code}
+                          className="h-3 w-3 mr-1.5"
+                        />
+                        {project.role}
+                      </span>
+                    </div>
+                  )}
+
                   <p className="text-zinc-600 dark:text-zinc-400 mb-4 leading-relaxed group-hover:text-zinc-700 dark:group-hover:text-zinc-300 transition-colors duration-300">
                     {project.description}
                   </p>

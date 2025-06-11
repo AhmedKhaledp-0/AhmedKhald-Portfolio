@@ -5,14 +5,16 @@ import {
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 // projects photos
-import orrerryProject from "../assets/projects/orrerryProject.webp";
-import littleLemonProject from "../assets/projects/littleLemonProject.webp";
-import coffeeProject from "../assets/projects/coffeeProject.webp";
-import wizardZProject from "../assets/projects/wizardZProject.webp";
-import ManouversTask from "../assets/projects/ManouversTask.webp";
-import tasksProgress from "../assets/projects/tasksProgress.webp";
-import DEPIProjectManager from "../assets/projects/DEPIProjectManager.webp";
-import tasksCountDown from "../assets/projects/tasksCountDown.webp";
+import orrerryProject from "../assets/projects/neo.webp";
+import littleLemonProject from "../assets/projects/little.webp";
+import coffeeProject from "../assets/projects/coffie.webp";
+import wizardZProject from "../assets/projects/wizard.webp";
+import ManouversTask from "../assets/projects/manuvers.webp";
+import tasksCountDown from "../assets/projects/count.webp";
+import habitura from "../assets/projects/hapit.webp";
+import fiscal from "../assets/projects/fiscal.webp";
+import pdfAnalize from "../assets/projects/ai.webp";
+import toTasky from "../assets/projects/totasky.webp";
 // skills icons using react-icons
 import {
   SiJavascript,
@@ -89,6 +91,39 @@ export const skills = [
 
 export const projects = [
   {
+    title: "Habitura",
+    description: "A habit tracking application with a sleek design.",
+    image: habitura,
+    github: "NA",
+    demo: "https://habitura-pi.vercel.app",
+    skills: ["Next.js", "TypeScript", "Tailwind CSS", "firebase"],
+  },
+  {
+    title: "Fiscal",
+    description: "A financial management application with advanced features.",
+    image: fiscal,
+    github: "NA",
+    demo: "https://flascflow.vercel.app/",
+    skills: ["Next.js", "JavaScript", "Tailwind CSS", "firebase"],
+  },
+  {
+    title: "PDF Analyze",
+    description: "An AI-powered PDF analysis tool.",
+    image: pdfAnalize,
+    github: "NA",
+    demo: "https://pdfanalize.vercel.app",
+    skills: ["React", "TypeScript", "Tailwind CSS", "Gemini API"],
+  },
+  {
+    title: "ToTasky",
+    description: "A task management application with a modern interface.",
+    image: toTasky,
+    github: "https://github.com/AhmedKhaledp-0/task-manager",
+    demo: "https://task-managerdepi.vercel.app",
+    skills: ["React", "TypeScript", "Tailwind CSS", "React Query"],
+    role: "Frontend developer",
+  },
+  {
     title: "NEO_SHERXE",
     description: "A 3D interactive space exploration application.",
     image: orrerryProject,
@@ -128,22 +163,23 @@ export const projects = [
     demo: "https://manuvers-assiment.vercel.app/",
     skills: ["React", "TypeScript", "Tailwind CSS", "ChartJS"],
   },
-  {
-    title: "Tasks Progress",
-    description: "Track and visualize task progress efficiently.",
-    image: tasksProgress,
-    github: "NA",
-    demo: "https://timeline-rose.vercel.app/",
-    skills: ["React", "TypeScript", "Tailwind CSS", "CSS"],
-  },
-  {
-    title: "DEPI Project Manager",
-    description: "Project management tool for DEPI initiatives.",
-    image: DEPIProjectManager,
-    github: "NA",
-    demo: "https://task-depi-project.vercel.app/",
-    skills: ["React", "TypeScript", "Tailwind CSS", "supabase"],
-  },
+
+  // {
+  //   title: "Tasks Progress",
+  //   description: "Track and visualize task progress efficiently.",
+  //   image: tasksProgress,
+  //   github: "NA",
+  //   demo: "https://timeline-rose.vercel.app/",
+  //   skills: ["React", "TypeScript", "Tailwind CSS", "CSS"],
+  // },
+  // {
+  //   title: "DEPI Project Manager",
+  //   description: "Project management tool for DEPI initiatives.",
+  //   image: DEPIProjectManager,
+  //   github: "NA",
+  //   demo: "https://task-depi-project.vercel.app/",
+  //   skills: ["React", "TypeScript", "Tailwind CSS", "supabase"],
+  // },
   {
     title: "Tasks CountDown",
     description: "Countdown timer for task management.",

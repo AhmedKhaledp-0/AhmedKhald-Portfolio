@@ -2,6 +2,13 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+html {
+  background: #ffffff; 
+}
+
+html.dark{
+  background: #111;
+}
 
 html {
   scroll-behavior: smooth;
