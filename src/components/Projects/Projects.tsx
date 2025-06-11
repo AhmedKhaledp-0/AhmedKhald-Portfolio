@@ -125,7 +125,7 @@ const Projects = () => {
                       icon={icons.externalLink}
                       className="h-4 w-4"
                     />
-                    View Demo
+                    Demo
                   </a>
                 </div>
               </div>
