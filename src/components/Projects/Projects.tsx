@@ -202,7 +202,7 @@ const Projects = () => {
             </button>
 
             {/* Modal Content */}
-            <div className="bg-white/95 dark:bg-zinc-900/95 rounded-2xl overflow-hidden shadow-2xl">
+            <div className="rounded-2xl overflow-hidden shadow-2xl">
               {/* Image */}
               <div className="relative">
                 <img
