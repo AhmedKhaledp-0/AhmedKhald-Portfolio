@@ -5,15 +5,13 @@ import {
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 // projects photos
-import orrerryProject from "../assets/projects/neo.webp";
+import orreryProject from "../assets/projects/neo.webp";
 import littleLemonProject from "../assets/projects/little.webp";
-import coffeeProject from "../assets/projects/coffie.webp";
-import wizardZProject from "../assets/projects/wizard.webp";
-import ManouversTask from "../assets/projects/manuvers.webp";
+import ManeuversTask from "../assets/projects/manuvers.webp";
 import tasksCountDown from "../assets/projects/count.webp";
 import habitura from "../assets/projects/hapit.webp";
 import fiscal from "../assets/projects/fiscal.webp";
-import pdfAnalize from "../assets/projects/ai.webp";
+import pdfAnalyze from "../assets/projects/ai.webp";
 import toTasky from "../assets/projects/totasky.webp";
 // skills icons using react-icons
 import {
@@ -57,7 +55,7 @@ export const links = [
     platform: "Facebook",
   },
   {
-    href: "https://www.linkedin.com/in/ahmed-khaled-8a6450276/",
+    href: "https://www.linkedin.com/in/ahmed-khaled-fathi/",
     icon: faLinkedin,
     hoverColor: "hover:text-blue-500",
     platform: "Linkedin",
@@ -109,7 +107,7 @@ export const projects = [
   {
     title: "PDF Analyze",
     description: "An AI-powered PDF analysis tool.",
-    image: pdfAnalize,
+    image: pdfAnalyze,
     github: "NA",
     demo: "https://pdfanalize.vercel.app",
     skills: ["React", "TypeScript", "Tailwind CSS", "Gemini API"],
@@ -126,7 +124,7 @@ export const projects = [
   {
     title: "NEO_SHERXE",
     description: "A 3D interactive space exploration application.",
-    image: orrerryProject,
+    image: orreryProject,
     github: "https://github.com/AhmedKhaledp-0/NEO_SHERXE",
     demo: "https://neo-sherxe.vercel.app/",
     skills: ["HTML", "CSS", "React", "Three.js", "R3F"],
@@ -140,25 +138,9 @@ export const projects = [
     skills: ["HTML", "CSS", "JavaScript", "React"],
   },
   {
-    title: "Coffee",
-    description: "A sleek, static website for a coffee brand.",
-    image: coffeeProject,
-    github: "https://github.com/AhmedKhaledp-0/coffee",
-    demo: "https://ahmedkhaledp-0.github.io/coffee/",
-    skills: ["HTML", "CSS"],
-  },
-  {
-    title: "WizardZ",
-    description: "A magical-themed interactive landing page.",
-    image: wizardZProject,
-    github: "https://github.com/AhmedKhaledp-0/wizardZ",
-    demo: "https://ahmedkhaledp-0.github.io/wizardZ/",
-    skills: ["HTML", "CSS"],
-  },
-  {
     title: "Manouvers Task",
     description: "A task management application for maneuvers.",
-    image: ManouversTask,
+    image: ManeuversTask,
     github: "https://github.com/AhmedKhaledp-0/Manuvers-Assiment",
     demo: "https://manuvers-assiment.vercel.app/",
     skills: ["React", "TypeScript", "Tailwind CSS", "ChartJS"],

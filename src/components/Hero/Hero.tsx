@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { icons } from "../../utils/icons";
 import myPhoto from "../../assets/ahmed.webp";
+import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 
 const Hero = () => {
   return (
@@ -31,12 +32,21 @@ const Hero = () => {
               </span>
             </h1>
 
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-zinc-700 dark:text-zinc-300 mb-6">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-zinc-700 dark:text-zinc-300 mb-2">
               Frontend{" "}
               <span className="text-zinc-900 dark:text-zinc-100">
                 Developer
               </span>
             </h2>
+            <span className="flex items-center justify-center lg:justify-start text-zinc-500 dark:text-zinc-400 mb-4">
+              <FontAwesomeIcon
+                icon={faLocationDot}
+                className="text-zinc-500 dark:text-zinc-400"
+              />
+              <span className="text-zinc-500 dark:text-zinc-400 ml-2">
+                Cairo, Egypt
+              </span>
+            </span>
 
             {/* Description */}
             <p className="text-lg text-zinc-600 dark:text-zinc-400 mb-8 max-w-2xl leading-relaxed">

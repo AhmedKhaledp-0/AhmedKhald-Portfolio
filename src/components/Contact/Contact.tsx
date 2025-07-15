@@ -5,11 +5,7 @@ import {
   faPhone,
   faMapMarkerAlt,
 } from "@fortawesome/free-solid-svg-icons";
-import {
-  faWhatsapp,
-  faTelegram,
-  faDiscord,
-} from "@fortawesome/free-brands-svg-icons";
+import { faWhatsapp, faTelegram } from "@fortawesome/free-brands-svg-icons";
 import { SocialMediaLinks } from "./SocialMediaLinks";
 
 const Contact = () => {
@@ -47,16 +43,6 @@ const Contact = () => {
           "_blank"
         ),
       description: "Send me an email",
-      available: true,
-    },
-    {
-      name: "Discord",
-      icon: faDiscord,
-      color: "from-indigo-500 to-indigo-600",
-      hoverColor: "hover:from-indigo-600 hover:to-indigo-700",
-      action: () =>
-        window.open("https://discord.com/users/978394183670841424", "_blank"),
-      description: "Connect on Discord",
       available: true,
     },
   ];
@@ -116,7 +102,9 @@ const Contact = () => {
                       Email
                     </p>
                     <p className="text-zinc-800 dark:text-zinc-200 font-semibold">
-                      3kuriboh3@gmail.com
+                      <a href="mailto:ahmedkhaled.dev8@gmail.com">
+                        ahmedkhaled.dev8@gmail.com
+                      </a>
                     </p>
                   </div>
                 </div>
@@ -150,7 +138,7 @@ const Contact = () => {
                       Location
                     </p>
                     <p className="text-zinc-800 dark:text-zinc-200 font-semibold">
-                      Egypt, Minya, Matay
+                      Cairo, Egypt
                     </p>
                   </div>
                 </div>
@@ -171,7 +159,11 @@ const Contact = () => {
               <div
                 key={index}
                 onClick={method.action}
-                className={`group relative bg-white/70 dark:bg-zinc-800/70  rounded-3xl p-8 shadow-md border border-zinc-200/50 dark:border-zinc-700/50 cursor-pointer transition-all duration-300 hover:shadow-lg hover:scale-105 hover:-translate-y-1 ${method.hoverColor}`}
+                className={`group relative bg-white/70 dark:bg-zinc-800/70 rounded-3xl p-8 shadow-md border border-zinc-200/50 dark:border-zinc-700/50 cursor-pointer transition-all duration-300 hover:shadow-lg hover:scale-105 hover:-translate-y-1 ${
+                  method.hoverColor
+                } ${
+                  index === instantMethods.length - 1 ? "md:col-span-2" : ""
+                }`}
               >
                 <div className="text-center">
                   <div
