@@ -1,8 +1,21 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { icons } from "../../utils/icons";
 import { projects } from "../../utils/constants";
+import { useState } from "react";
+import { faTimes } from "@fortawesome/free-solid-svg-icons";
 
 const Projects = () => {
+  const [modal, setModal] = useState<{ imgHigh: string; title: string } | null>(
+    null
+  );
+
+  const openModal = (imgHigh: string, title: string) => {
+    setModal({ imgHigh, title });
+  };
+
+  const closeModal = () => {
+    setModal(null);
+  };
   return (
     <section
       id="projects"
@@ -44,6 +57,7 @@ const Projects = () => {
                   src={project.image}
                   alt={project.title}
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  onClick={() => openModal(project.imgHigh, project.title)}
                 />
               </div>
 
@@ -138,6 +152,40 @@ const Projects = () => {
           </div>
         </div>
       </div>
+      {/* Image Modal */}
+      {modal && (
+        <div className="fixed inset-0 bg-black/80 backdrop-blur-sm flex items-center justify-center z-50 p-4">
+          <div className="relative max-w-4xl max-h-[90vh] w-full">
+            {/* Close Button */}
+            <button
+              onClick={closeModal}
+              className="absolute -top-12 right-0 text-white hover:text-zinc-300 transition-colors duration-200 flex items-center gap-2 text-sm font-medium"
+            >
+              <FontAwesomeIcon icon={faTimes} className="h-6 w-6" />
+              Close
+            </button>
+
+            {/* Modal Content */}
+            <div className="bg-white/95 dark:bg-zinc-900/95 rounded-2xl overflow-hidden shadow-2xl">
+              {/* Image */}
+              <div className="relative">
+                <img
+                  src={modal.imgHigh}
+                  alt={modal.title}
+                  className="w-full h-auto max-h-[70vh] object-contain"
+                />
+              </div>
+
+              {/* Title */}
+              <div className="p-6 border-t border-zinc-200/50 dark:border-zinc-700/50">
+                <h3 className="text-2xl font-bold text-zinc-800 dark:text-zinc-200 text-center">
+                  {modal.title}
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </section>
   );
 };

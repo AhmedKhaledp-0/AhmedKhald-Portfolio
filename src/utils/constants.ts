@@ -13,6 +13,17 @@ import habitura from "../assets/projects/hapit.webp";
 import fiscal from "../assets/projects/fiscal.webp";
 import pdfAnalyze from "../assets/projects/ai.webp";
 import toTasky from "../assets/projects/totasky.webp";
+
+// high resolution photos
+import neoHight from "../assets/projects/neoHigh.png";
+import littleHigh from "../assets/projects/littleHigh.png";
+import manuversHigh from "../assets/projects/manuversHigh.png";
+import countHigh from "../assets/projects/countHigh.png";
+import habituraHight from "../assets/projects/hapitHigh.png";
+import fiscalHight from "../assets/projects/fiscalHigh.png";
+import pdfAnalyzeHight from "../assets/projects/aiHigh.png";
+import toTaskyHight from "../assets/projects/totaskyHigh.png";
+
 // skills icons using react-icons
 import {
   SiJavascript,
@@ -92,6 +103,7 @@ export const projects = [
     title: "Habitura",
     description: "A habit tracking application with a sleek design.",
     image: habitura,
+    imgHigh: habituraHight,
     github: "NA",
     demo: "https://habitura-pi.vercel.app",
     skills: ["Next.js", "TypeScript", "Tailwind CSS", "firebase"],
@@ -100,6 +112,7 @@ export const projects = [
     title: "Fiscal",
     description: "A financial management application with advanced features.",
     image: fiscal,
+    imgHigh: fiscalHight,
     github: "NA",
     demo: "https://flascflow.vercel.app/",
     skills: ["Next.js", "JavaScript", "Tailwind CSS", "firebase"],
@@ -108,6 +121,7 @@ export const projects = [
     title: "PDF Analyze",
     description: "An AI-powered PDF analysis tool.",
     image: pdfAnalyze,
+    imgHigh: pdfAnalyzeHight,
     github: "NA",
     demo: "https://pdfanalize.vercel.app",
     skills: ["React", "TypeScript", "Tailwind CSS", "Gemini API"],
@@ -116,6 +130,7 @@ export const projects = [
     title: "ToTasky",
     description: "A task management application with a modern interface.",
     image: toTasky,
+    imgHigh: toTaskyHight,
     github: "https://github.com/AhmedKhaledp-0/task-manager",
     demo: "https://task-managerdepi.vercel.app",
     skills: ["React", "TypeScript", "Tailwind CSS", "React Query"],
@@ -125,6 +140,7 @@ export const projects = [
     title: "NEO_SHERXE",
     description: "A 3D interactive space exploration application.",
     image: orreryProject,
+    imgHigh: neoHight,
     github: "https://github.com/AhmedKhaledp-0/NEO_SHERXE",
     demo: "https://neo-sherxe.vercel.app/",
     skills: ["HTML", "CSS", "React", "Three.js", "R3F"],
@@ -133,6 +149,7 @@ export const projects = [
     title: "Little Lemon",
     description: "A website showing menu and reservation features.",
     image: littleLemonProject,
+    imgHigh: littleHigh,
     github: "https://github.com/AhmedKhaledp-0/little-lemon",
     demo: "https://little-lemon-inky-six.vercel.app/",
     skills: ["HTML", "CSS", "JavaScript", "React"],
@@ -141,6 +158,7 @@ export const projects = [
     title: "Manouvers Task",
     description: "A task management application for maneuvers.",
     image: ManeuversTask,
+    imgHigh: manuversHigh,
     github: "https://github.com/AhmedKhaledp-0/Manuvers-Assiment",
     demo: "https://manuvers-assiment.vercel.app/",
     skills: ["React", "TypeScript", "Tailwind CSS", "ChartJS"],
@@ -166,6 +184,7 @@ export const projects = [
     title: "Tasks CountDown",
     description: "Countdown timer for task management.",
     image: tasksCountDown,
+    imgHigh: countHigh,
     github: "NA",
     demo: "https://countdown-app-rose.vercel.app/",
     skills: ["React", "TypeScript", "Tailwind CSS"],
