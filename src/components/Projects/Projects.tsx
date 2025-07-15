@@ -1,20 +1,53 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { icons } from "../../utils/icons";
 import { projects } from "../../utils/constants";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { faTimes } from "@fortawesome/free-solid-svg-icons";
 
 const Projects = () => {
-  const [modal, setModal] = useState<{ imgHigh: string; title: string } | null>(
-    null
-  );
+  const [modal, setModal] = useState<{
+    imgHigh: string;
+    title: string;
+    description: string;
+    role?: string;
+  } | null>(null);
 
-  const openModal = (imgHigh: string, title: string) => {
-    setModal({ imgHigh, title });
+  const openModal = (project: (typeof projects)[0]) => {
+    setModal({
+      imgHigh: project.imgHigh,
+      title: project.title,
+      description: project.description,
+      role: project.role,
+    });
   };
 
   const closeModal = () => {
     setModal(null);
+  };
+
+  useEffect(() => {
+    if (modal) {
+      document.body.style.overflow = "hidden";
+
+      const handleEscape = (e: KeyboardEvent) => {
+        if (e.key === "Escape") {
+          closeModal();
+        }
+      };
+
+      document.addEventListener("keydown", handleEscape);
+
+      return () => {
+        document.body.style.overflow = "unset";
+        document.removeEventListener("keydown", handleEscape);
+      };
+    }
+  }, [modal]);
+
+  const handleBackdropClick = (e: React.MouseEvent) => {
+    if (e.target === e.currentTarget) {
+      closeModal();
+    }
   };
   return (
     <section
@@ -56,8 +89,8 @@ const Projects = () => {
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                  onClick={() => openModal(project.imgHigh, project.title)}
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 cursor-pointer"
+                  onClick={() => openModal(project)}
                 />
               </div>
 
@@ -154,12 +187,15 @@ const Projects = () => {
       </div>
       {/* Image Modal */}
       {modal && (
-        <div className="fixed inset-0 bg-black/80 backdrop-blur-sm flex items-center justify-center z-50 p-4">
-          <div className="relative max-w-4xl max-h-[90vh] w-full">
+        <div
+          className="fixed inset-0 bg-black/90 flex items-center justify-center z-50 p-4"
+          onClick={handleBackdropClick}
+        >
+          <div className="relative max-w-4xl w-full">
             {/* Close Button */}
             <button
               onClick={closeModal}
-              className="absolute -top-12 right-0 text-white hover:text-zinc-300 transition-colors duration-200 flex items-center gap-2 text-sm font-medium"
+              className="absolute -top-12 right-0 text-zinc-700 dark:text-zinc-300 hover:text-zinc-900 dark:hover:text-zinc-300 transition-colors duration-200 flex items-center gap-2 text-sm font-medium py-2 px-4 rounded-full bg-zinc-50 dark:bg-zinc-700/50"
             >
               <FontAwesomeIcon icon={faTimes} className="h-6 w-6" />
               Close
@@ -172,15 +208,31 @@ const Projects = () => {
                 <img
                   src={modal.imgHigh}
                   alt={modal.title}
-                  className="w-full h-auto max-h-[70vh] object-contain"
+                  className="w-full h-auto max-h-[60vh] object-cover"
                 />
-              </div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
 
-              {/* Title */}
-              <div className="p-6 border-t border-zinc-200/50 dark:border-zinc-700/50">
-                <h3 className="text-2xl font-bold text-zinc-800 dark:text-zinc-200 text-center">
-                  {modal.title}
-                </h3>
+                <div className="absolute bottom-6 left-6 right-6">
+                  <div className="flex items-center gap-3 mb-0 md:mb-3">
+                    <h3 className="text-xl md:text-4xl font-bold text-white">
+                      {modal.title}
+                    </h3>
+                    {modal.role && (
+                      <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-blue-500/80 text-white border border-blue-400/30">
+                        <FontAwesomeIcon
+                          icon={icons.code}
+                          className="h-3 w-3 mr-1.5"
+                        />
+                        {modal.role}
+                      </span>
+                    )}
+                  </div>
+
+                  {/* Description */}
+                  <p className="text-white/90 text-sm md:text-lg leading-relaxed  max-w-2xl">
+                    {modal.description}
+                  </p>
+                </div>
               </div>
             </div>
           </div>
