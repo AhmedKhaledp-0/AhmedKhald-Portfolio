@@ -204,7 +204,7 @@ const Projects = () => {
             {/* Modal Content */}
             <div className="rounded-2xl overflow-hidden shadow-2xl">
               {/* Image */}
-              <div className="relative">
+              <div className="relative min-h-[300px]">
                 <img
                   src={modal.imgHigh}
                   alt={modal.title}
