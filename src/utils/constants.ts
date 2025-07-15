@@ -15,14 +15,14 @@ import pdfAnalyze from "../assets/projects/ai.webp";
 import toTasky from "../assets/projects/totasky.webp";
 
 // high resolution photos
-import neoHight from "../assets/projects/neoHigh.png";
-import littleHigh from "../assets/projects/littleHigh.png";
-import manuversHigh from "../assets/projects/manuversHigh.png";
-import countHigh from "../assets/projects/countHigh.png";
-import habituraHight from "../assets/projects/hapitHigh.png";
-import fiscalHight from "../assets/projects/fiscalHigh.png";
-import pdfAnalyzeHight from "../assets/projects/aiHigh.png";
-import toTaskyHight from "../assets/projects/totaskyHigh.png";
+import neoHight from "../assets/projects/neoHigh.webp";
+import littleHigh from "../assets/projects/littleHigh.webp";
+import manuversHigh from "../assets/projects/manuversHigh.webp";
+import countHigh from "../assets/projects/countHigh.webp";
+import habituraHight from "../assets/projects/hapitHigh.webp";
+import fiscalHight from "../assets/projects/fiscalHigh.webp";
+import pdfAnalyzeHight from "../assets/projects/aiHigh.webp";
+import toTaskyHight from "../assets/projects/totaskyHigh.webp";
 
 // skills icons using react-icons
 import {
