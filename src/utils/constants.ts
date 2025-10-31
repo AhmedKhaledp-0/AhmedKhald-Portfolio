@@ -13,6 +13,7 @@ import habitura from "../assets/projects/hapit.webp";
 import fiscal from "../assets/projects/fiscal.webp";
 import pdfAnalyze from "../assets/projects/ai.webp";
 import toTasky from "../assets/projects/totasky.webp";
+import eyesOnEarth from "../assets/projects/eyesOnEarth.webp";
 
 // high resolution photos
 import neoHight from "../assets/projects/neoHigh.webp";
@@ -23,6 +24,7 @@ import habituraHight from "../assets/projects/hapitHigh.webp";
 import fiscalHight from "../assets/projects/fiscalHigh.webp";
 import pdfAnalyzeHight from "../assets/projects/aiHigh.webp";
 import toTaskyHight from "../assets/projects/totaskyHigh.webp";
+import eyesOnEarthHigh from "../assets/projects/eyesOnEarthHigh.webp";
 
 // skills icons using react-icons
 import {
@@ -99,6 +101,24 @@ export const skills = [
 ];
 
 export const projects = [
+  {
+    title: "Eyes on Earth",
+    description:
+      "A webapp to visualie 25k satellite around the earth with spaccetrackerapi and al the sattlite data with Ai summary ",
+    image: eyesOnEarth,
+    imgHigh: eyesOnEarthHigh,
+    github: "NA",
+    demo: "https://eyesonearth.vercel.app/",
+    skills: [
+      "React.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Three.js",
+      "R3F",
+      "GeminiAI",
+      "Express",
+    ],
+  },
   {
     title: "Habitura",
     description: "A habit tracking application with a sleek design.",
